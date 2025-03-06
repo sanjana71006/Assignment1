@@ -1,18 +1,84 @@
-.box{
-            background-color: rgb(110, 221, 231) ;
-            text-align: center;
-        }
-        table{
-            border-color: aqua;
-            border-style: solid;
-            border-width: 3px;
-            border-collapse: collapse ;
-        }
-i{
-    font-size: 35px;
-    margin:20px;
+
+
+
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
 }
-input{
-    margin-top: 6px;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
- 
+h1, h2, h3 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+h1:hover, h2:hover, h3:hover {
+    transform: scale(1.1);
+    color: #ff4081;
+}
+.box {
+    color: #fff;
+    background: rgba(255, 64, 129, 0.8);
+    padding: 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+}
+th, td {
+    padding: 15px;
+    border: 1px solid #ff4081;
+    text-align: center;
+}
+input[type="text"], input[type="number"], input[type="email"] {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
+    box-shadow: 0px 0px 15px rgba(255, 64, 129, 0.8);
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background: #ff4081;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+    background: #e91e63;
+}
+a i {
+    font-size: 30px;
+    margin: 10px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+a i:hover {
+    transform: scale(1.3);
+    color: #ff4081;
+}
